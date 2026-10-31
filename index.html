@@ -158,18 +158,29 @@
         Your browser does not support video.
     </video>
 
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        title="YouTube video player"
-        allowfullscreen>
-    </iframe>
+  <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/_6HzLIJPH2A"
+      title="YouTube Shorts video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+  </iframe>
 
     <canvas id="demo-canvas" width="300" height="150">
         Canvas fallback content.
     </canvas>
+    <svg width="200" height="100" viewBox="0 0 200 100">
+      <rect width="150" height="70" fill="steelblue"/>
+      <circle cx="170" cy="35" r="25" fill="tomato"/>
+    </svg>
+    <dialog open>
+      <p>This is a sample dialog element.</p>
+    </dialog>
   </section>
+
   <hr>
   <section>
     <h2>5. Form Elements</h2>
@@ -184,24 +195,24 @@
             <input name="email" type="email" id="email" placeholder="Enter your email">
 
             <label for="password">Password:</label>
-            <input name="password type="password" id="password">
+            <input name="password" type="password" id="password">
 
             <label for="country">Country:</label>
-            <select id="country">
+            <select name="country" id="country">
                 <option>Pakistan</option>
                 <option>UAE</option>
                 <option>Germany</option>
             </select>
 
-            <label for="message">Message:</label>
-            <textarea id="message" rows="4"></textarea>
+            <label  for="message">Message:</label>
+            <textarea name="message" id="message" rows="4"></textarea>
 
             <label>
-                <input type="checkbox">
+                <input name="subscribe" type="checkbox">
                 Subscribe to updates
             </label>
 
-            <button type="button">Submit</button>
+            <button type="submit">Submit</button>
             <button type="reset">Reset</button>
         </fieldset>
     </form>
@@ -215,25 +226,25 @@
 
         <thead>
             <tr>
-                <th>Subject</th>
-                <th>Status</th>
-                <th>Progress</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Status</th>
+                <th scope="col">Progress</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td>HTML</td>
+                <th scope="row">HTML</th>
                 <td>Completed</td>
                 <td>100%</td>
             </tr>
             <tr>
-                <td>CSS</td>
+                <th scope="row">CSS</th>
                 <td>Progressing good</td>
                 <td>80%</td>
             </tr>
             <tr>
-                <td>JavaScript</td>
+                <th scope="row">JavaScript</th>
                 <td>showing progress</td>
                 <td>90%</td>
             </tr>
@@ -300,7 +311,7 @@
   ctx.fill();
   ctx.fillStyle = "black";
   ctx.font = "20px Arial";
-  ctx.fillText("Hello Canvas!", 20, 170);
+  ctx.fillText("Hello Canvas!", 20, 140);
   </script>
 </body>
 
