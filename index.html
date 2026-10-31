@@ -6,6 +6,302 @@
     <title>CSS Reset Playground</title>
   </head>
   <body>
-    
-  </body>
+    <header>
+      <h1>CSS Reset PlayGround</h1>
+      <p>Exploring how different css resets affect the default html elements </p>
+      <fieldset>
+        <legend>Select a CSS Reset</legend>
+
+        <label>
+            <input type="radio" name="css-reset" value="none" checked>
+            No Reset
+        </label>
+
+        <label>
+            <input type="radio" name="css-reset" value="universal">
+            Universal Reset
+        </label>
+
+        <label>
+            <input type="radio" name="css-reset" value="modern">
+            Modern Reset
+        </label>
+
+        <label>
+            <input type="radio" name="css-reset" value="meyer">
+            Eric Meyer Reset
+        </label>
+
+        <label>
+            <input type="radio" name="css-reset" value="normalize">
+            Normalize.css
+        </label>
+
+        <label>
+            <input type="radio" name="css-reset" value="matt">
+            Matt Brictson Reset
+        </label>
+
+        <label>
+            <input type="radio" name="css-reset" value="josh">
+            Josh Comeau Reset
+        </label>
+    </fieldset>
+    </header>
+
+    <main>
+
+    <section>
+      <h2>1.Headings</h2>
+      <h1>Heading h1</h1>
+      <h2>Heading h2</h2>
+      <h3>Heading h3</h3>
+      <h4>Heading h4</h4>
+      <h5>Heading h5</h5>
+      <h6>Heading h6</h6>
+    </section>
+    <hr>
+    <section>
+      <h2>2.Text Elements</h2>
+      <p>This is a paragraph (for testing default margins and heights)</p>
+      <p>
+        This paragraph contains
+        <strong>strong text</strong>,
+        <em>emphasized text</em>,
+        <b>bold text</b>,
+        <i>italic text</i>,
+        <small>small text</small>,
+        <mark>highlighted text</mark>,
+      <del>deleted text</del>,
+      and <ins>inserted text</ins>.
+    </p>
+
+    <p>
+      Here is some <sub>subscript</sub> and <sup>superscript</sup>
+    </p>
+
+    <p>
+      Here is an <a href="#">example hyperlink</a>,
+      <code>console.log("Hello World")</code>,
+      and <abbr title="HyperText Markup Language">HTML</abbr>.
+      </p>
+
+      <blockquote>
+      CSS resets help developers create a more consistent
+      starting point across different browsers.
+      <cite>CSS Learning Notes</cite>
+      </blockquote>
+
+      <pre>
+      This is preformatted text.
+      Notice the spacing and indentation.
+      </pre>
+
+    </section>
+    <hr>
+    <section>
+        <h2>3. Lists</h2>
+
+        <h3>Unordered List</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Learn HTML</li>
+            <li>Learn CSS</li>
+            <li>Learn JavaScript</li>
+        </ol>
+
+        <h3>Nested Lists</h3>
+        <ul>
+            <li>Frontend
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </li>
+            <li>Backend</li>
+        </ul>
+
+        <h3>Lists with role="list"</h3>
+        <ul role="list">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+
+        <ol role="list">
+            <li>First step</li>
+            <li>Second step</li>
+            <li>Third step</li>
+        </ol>
+    </section>
+    <hr>
+  <section>
+    <h2>4. Figures and Media</h2>
+
+    <figure>
+        <img
+            src="download.jpeg"
+            alt="Image of icy mountains views"
+        >
+        <figcaption>
+            An image with a figure caption.
+        </figcaption>
+    </figure>
+
+    <video src="file_example_WEBM_480_900KB.webm" controls width="400">
+        Your browser does not support video.
+    </video>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video player"
+        allowfullscreen>
+    </iframe>
+
+    <canvas id="demo-canvas" width="300" height="150">
+        Canvas fallback content.
+    </canvas>
+  </section>
+  <hr>
+  <section>
+    <h2>5. Form Elements</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label>
+            <input name="name" type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input name="email" type="email" id="email" placeholder="Enter your email">
+
+            <label for="password">Password:</label>
+            <input name="password type="password" id="password">
+
+            <label for="country">Country:</label>
+            <select id="country">
+                <option>Pakistan</option>
+                <option>UAE</option>
+                <option>Germany</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4"></textarea>
+
+            <label>
+                <input type="checkbox">
+                Subscribe to updates
+            </label>
+
+            <button type="button">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+  </section>
+  <hr>
+  <section>
+    <h2>6. Tables</h2>
+
+    <table>
+        <caption>Learning Progress</caption>
+
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Status</th>
+                <th>Progress</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Completed</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Progressing good</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>showing progress</td>
+                <td>90%</td>
+            </tr>
+        </tbody>
+    </table>
+  </section>
+  <hr>
+  <section>
+    <h2>7. Interactive Elements</h2>
+
+    <details>
+        <summary>What is a CSS reset?</summary>
+        <p>A CSS reset modifies browser default styles to provide a more consistent starting point.</p>
+    </details>
+
+    <p>Progress:</p>
+    <progress value="70" max="100">70%</progress>
+
+    <p>Score:</p>
+    <meter value="0.7">70%</meter>
+  </section>
+  <hr>
+  <section>
+    <h2>8. Semantic Elements</h2>
+
+    <article>
+      <header>
+          <h3>Understanding CSS Resets</h3>
+          <p>Published on <time datetime="2026-10-31">October 31, 2026</time></p>
+      </header>
+
+      <p>
+          Semantic HTML gives meaning to the content
+          and helps browsers and assistive technologies
+          understand the document structure.
+      </p>
+
+      <footer>
+          <p>Article footer content.</p>
+      </footer>
+    </article>
+
+    <address>
+        Written by a CSS learner.<br>
+        Contact: <a href="mailto:milyasstudent@gmail.com">Email</a>
+    </address>
+  </section>
+  </main>
+
+  <hr>
+  <footer>
+    <p>CSS Reset Playground - Learning by experimenting.</p>
+  </footer>
+
+  <script>
+  const canvas = document.querySelector("#demo-canvas");
+  const ctx = canvas.getContext("2d");
+
+  ctx.fillStyle = "steelblue";
+  ctx.fillRect(20, 20, 150, 100);
+  ctx.beginPath();
+  ctx.arc(250, 70, 45, 0, Math.PI * 2);
+  ctx.fillStyle = "tomato";
+  ctx.fill();
+  ctx.fillStyle = "black";
+  ctx.font = "20px Arial";
+  ctx.fillText("Hello Canvas!", 20, 170);
+  </script>
+</body>
+
 </html>
