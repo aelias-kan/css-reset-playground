@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Reset Playground</title>
+    <link id="reset-stylesheet" rel="stylesheet" href="resets/none.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -299,20 +301,6 @@
     <p>CSS Reset Playground - Learning by experimenting.</p>
   </footer>
 
-  <script>
-  const canvas = document.querySelector("#demo-canvas");
-  const ctx = canvas.getContext("2d");
-
-  ctx.fillStyle = "steelblue";
-  ctx.fillRect(20, 20, 150, 100);
-  ctx.beginPath();
-  ctx.arc(250, 70, 45, 0, Math.PI * 2);
-  ctx.fillStyle = "tomato";
-  ctx.fill();
-  ctx.fillStyle = "black";
-  ctx.font = "20px Arial";
-  ctx.fillText("Hello Canvas!", 20, 140);
-  </script>
 </body>
 
 </html>
