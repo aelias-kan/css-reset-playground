@@ -1,0 +1,49 @@
+
+/* =================================
+   MATT BRICTSON CSS RESET
+   Based on Matt Brictson's approach
+================================= */
+
+/* Import modern-normalize */
+@import url("https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.css");
+
+/* Set a consistent line height */
+:root {
+    line-height: 1.5;
+}
+
+/* Remove default margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+    margin: 0;
+}
+
+/* Remove list styling only from accessible lists */
+ol[role="list"],
+ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+}
+
+/* Reset heading font sizes and weights */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Make images responsive block elements */
+img {
+    display: block;
+    max-inline-size: 100%;
+}
